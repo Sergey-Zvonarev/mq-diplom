@@ -536,10 +536,15 @@ body {
 
 
 .production_news{
-  width: 333px;
+   width: 333px;
    position: relative;
-   margin-bottom: 140px;
+   margin-bottom: 260px;
   }
+
+.production_news:first-child{
+   margin-top: 0;
+}
+
 
 .production_news img{
     width: 300px;
@@ -731,7 +736,9 @@ body {
     margin-top: 17px;
   }
 
-  
+  .production_news{
+  margin-top: 100px;
+  }
 }
 
 
