@@ -137,12 +137,30 @@ body {
 .trend_news_card{
   width: calc(25% - 5px);   /*410px*/
   position: relative;
-  background-image: url(../images/trend1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #000000;
   color:#ffffff;
+  min-width: 300px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.trend_one {
+  background-image: url(../images/trend1.jpg);
+}
+
+.trend_two {
+  background-image: url(../images/trend2.jpg);
+}
+
+.trend_three {
+  background-image: url(../images/trend3.jpg);
+}
+
+.trend_four{
+  background-image: url(../images/trend4.jpg);
 }
 
 .trend_news_card img{
@@ -682,6 +700,15 @@ body {
   }
   .welcome-title{
     font-size: 40px;
+  }
+
+  .trend_news{
+    flex-wrap: wrap;
+  }
+
+  .trend_news_card{
+    width: calc(50% - 3px);
+    margin-bottom: 5px;
   }
 
 }
