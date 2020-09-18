@@ -746,8 +746,12 @@ body {
    
    .header {
   background-image: url(../images/banner-mobile.jpg);
-  /*min-width:740px;*/
+  min-width:0;
  }
+
+  .container{
+    width: auto;
+  }
     .header-top{
     display:flex;
     flex-direction: column;
@@ -766,19 +770,46 @@ body {
   background-color: #fff;
   position:absolute;
   top: 20px;
-  right: 0;
+  right: 15px;
   border-radius: 3px;
 
   }
 
   .welcome-title-container{
   margin-top: 0;
+  width: auto;
+
 }
   .welcome-title{
     font-size: 26px;
+    line-height: 1.2;
   }
 
   .menu-list{
       display: none;
     }
+
+
+    .page{
+      flex-wrap: wrap;
+    }
+    .trend_news{
+      flex-wrap: wrap;
+    }
+    .trend_news_card{
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+    .news {
+    display: block;
+  }
+
+    .news-img{
+      width: 330px;
+    }
+    .news-content-text{
+      width: 330px;
+    }
+
 }
