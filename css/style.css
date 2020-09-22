@@ -22,6 +22,7 @@ body {
 }
 
 .header {
+  width: 100%;
   background-image: url(../images/banner-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,7 +33,9 @@ body {
   min-width:1200px;
   padding-top:1.4em;                      /*21px*/
   padding-bottom: 6.7em;                 /*100px;*/
-}
+
+
+  }
 
 .header::before {
   content: "";
@@ -140,7 +143,7 @@ body {
 
 
 .trend_news_card{
-  width: calc(25% - 5px);   /*410px*/
+  width: calc(25% - 2px);   /*410px*/
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -538,16 +541,17 @@ body {
 .production_news{
    width: 333px;
    position: relative;
-   margin-bottom: 260px;
+   display: flex;
+   flex-direction: column;
   }
 
-.production_news:first-child{
-   margin-top: 0;
+.production_news:last-child{
+   margin-top: 28px;
 }
 
 
 .production_news img{
-    width: 300px;
+    max-width: 100%;
     display:block;
     margin:0 auto;
 
@@ -556,12 +560,14 @@ body {
 
 .production_news_text{
   border: 3px solid #d3c59d;
-  width: 342px;
-  height: 300px;
-  position: absolute;
-  top: 170px;
+  position: relative;
+  z-index: 2;
   padding: 50px 20px;
   box-sizing: border-box;
+  margin-top: -33px;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .production_news_title{ color: #0f0d0e;
@@ -601,6 +607,10 @@ body {
   text-decoration: line-through;
   font-size: 14px;
   margin-bottom: 5px;
+}
+
+.product_price-value-two, .product_rub-two{
+  visibility: hidden;
 }
 
 .product_rub {
@@ -691,6 +701,7 @@ body {
 
 
 /*Медиа запросы*/
+
 
 
 @media (min-width: 768px) {
