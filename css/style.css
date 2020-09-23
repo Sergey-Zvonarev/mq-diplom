@@ -562,7 +562,7 @@ body {
   border: 3px solid #d3c59d;
   position: relative;
   z-index: 2;
-  padding: 50px 20px;
+  padding: 50px 20px 26px;
   box-sizing: border-box;
   margin-top: -33px;
   flex-basis: auto;
@@ -697,6 +697,126 @@ body {
   text-align:center;
   color:#999999;
   font-size:12px;
+}
+
+
+
+
+/*Popup блок*/
+.popup{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.sign-up__hint{
+  margin-top: 35px;
+}
+
+.popup__container{
+  max-width: 500px;
+  width: 300px;
+  margin: auto;
+  padding: 50px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.sign-up__hint{
+  display: block;
+  margin-bottom: 20px;
+}
+.popup-form-group select{
+  background-color: #f3f7f6;
+  color: #707271;
+  text-transform: none;
+  padding: 15px 20px;
+  width: 100%;
+  -webkit-appearance: none;
+-moz-appearance: none;
+  background-image: url("../svg/form-arrows.svg");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 10px 20px; 
+  border:none;
+ }
+
+ .radio-group-text::before {
+content: "";
+display: inline-block;
+width: 20px;
+height: 20px;
+background-image: url("../svg/form-circle.svg");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 20px;
+vertical-align: middle;
+margin-right: 8px;
+}
+
+.radio-group {
+display: inline-block;
+font-size: 15px;
+}
+
+.radio-group:nth-of-type(n+2) {
+margin-left: 15px;
+}
+
+.radio {
+position: absolute;
+clip: rect(1px, 1px, 1px, 1px);
+height: 1px;
+width: 1px;
+}
+
+.radio-group-text_no::before{
+  content: "";
+display: inline-block;
+width: 20px;
+height: 20px;
+background-image: url("../svg/form-empty-circle.svg");
+background-repeat: no-repeat;
+background-position: center center;
+background-size: 20px;
+vertical-align: middle;
+margin-right: 8px;
+}
+
+.textarea{
+  box-sizing: border-box;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 133px;
+  max-height: 133px;
+  border: none;
+  background-color: #f3f7f6;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.sign-up__row{
+  margin-top: 27px;
+}
+.sign-up__button{
+  width: 100%;
+  border: none;
+  padding: 18px 0;
+    background-color: #b69f5b;
+      cursor: pointer;  
+}
+
+.sign-up__button-label{
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+
 }
 
 
