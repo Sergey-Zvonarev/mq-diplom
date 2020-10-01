@@ -175,9 +175,30 @@ a:hover{
   min-width: 300px;
   display: flex;
   align-items: flex-end;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.trend_news_card_img{
+.img_trend1{
+  background-image: url("../images/trend1.jpg");
+}
+
+.img_trend2{
+  background-image: url("../images/trend2.jpg");
+}
+
+.img_trend3{
+  background-image: url("../images/trend3.jpg");
+}
+.img_trend4{
+  background-image: url("../images/trend4.jpg");
+}
+
+/* контентная картинка*/
+
+/*.trend_news_card_img{
     display: block;
     position: absolute;
     top: 0;
@@ -188,8 +209,9 @@ a:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+}*/
 
+/* контентная картинка*/
 
 
 .trend_news_card::before{
