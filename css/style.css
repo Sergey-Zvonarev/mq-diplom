@@ -172,7 +172,7 @@ a:hover{
   background-position: center;
   background-color: #000000;
   color:#ffffff;
-  min-width: 300px;
+  min-width: 290px;
   display: flex;
   align-items: flex-end;
 
@@ -1001,22 +1001,22 @@ width: 1px;
 
   }*/
     .production_news{
-      margin-right: 22px;
+     /* margin-right: 22px;*/
       margin-bottom: 28px;
-
+      width: calc(50% - 5px);
   }
 
 
 }
-
-@media (min-width: 780px) and (max-width: 1134px){
+/*
+@media (min-width: 780px) and (max-width: 1133px){
   .production_news{
     width: calc(50% - 22px);
   }
-}
+}*/
 
 
-@media (max-width: 779px) { /*640px*/
+@media (max-width: 640px) { /*779px*/
 .header {
   background-image: url(../images/banner-mobile.jpg);
   min-width:0;
