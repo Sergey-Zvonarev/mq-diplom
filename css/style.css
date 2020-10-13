@@ -140,6 +140,7 @@ a:hover{
   margin-bottom: 35px;
 }
 
+
 .article_trend_title::after {
   content: "";
   background-color: #b59f5b;
@@ -152,7 +153,7 @@ a:hover{
   margin-right:auto;
 }
 
-.article_trend_title a{
+.article_trend_title_link{
   text-decoration: none;
   cursor: pointer;
   color: #000;
@@ -175,7 +176,8 @@ a:hover{
   min-width: 290px;
   display: flex;
   align-items: flex-end;
-
+  height: 320px;
+  padding-top: 15px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -234,25 +236,25 @@ a:hover{
   font-weight: 700;
   border:3px solid #796d38;
   width: 90%;   /*370px*/
-  margin: 158px auto 15px auto;
-  padding: 6.9% 16.7% 6% 6%;
+  margin: auto auto 15px;
+  padding: 40px 90px 40px 34px;
   box-sizing: border-box;
 
  }
 
-.card_title ul{
+.news-subject{
   padding-bottom: 11px;
 
 }
 
- .card_title h2{
+ .card_title_header{
     font-size: inherit;
     font-weight: 700;
     margin: 0; 
 
  }
 
-  .card_title h2 a{
+  .card_title_header_link{
     text-decoration: none;
     color: #fff;
     line-height: 24px;
@@ -398,11 +400,11 @@ a:hover{
   margin-top: 40px;
  }
 
-
+/*
 .news-content-text a{
   text-decoration: none;
   color: #b59f5b;
-}
+}*/
 
 .sidebar {
   width: 282px;
@@ -924,11 +926,11 @@ width: 1px;
     min-width: 641px;
   }
 
-  .article_trend_title a{
+  .article_trend_title_link{
     font-size: 18px;
   }
 
-  .card_title h2 a {
+  .card_title_header_link{
     font-size: 17px;
     line-height: 22px;
   }
@@ -937,7 +939,6 @@ width: 1px;
   }
   .trend_news_card {
     width: calc(50% - 3px);
-    height: 245px;
   }
   .trend_news_card:nth-child(n+3) {
     margin-top: 2px;
@@ -993,7 +994,7 @@ width: 1px;
       margin-top: 30px;
 
   }
-  .news-content-text p{
+  .news-content-text_article{
     margin: 0;
   }
 /*  .production{
@@ -1061,9 +1062,12 @@ width: 1px;
   .menu-list{
       display: none;
     }
-
-    .article_trend_title a{
+    .article_trend_title{
+      margin-bottom: 25px;
+    }
+    .article_trend_title_link{
     font-size: 16px;
+
   }
     .page{
       flex-wrap: wrap;
@@ -1074,12 +1078,16 @@ width: 1px;
     .trend_news_card{
       width: 100%;
       margin-bottom: 5px;
+      height: 230px;
+      padding-top: 65px;
     }
-
+    .card_title{
+      padding:30px 110px 30px 22px;
+    }
     .news {
     display: block;
     }
-   .card_title h2 a {
+   .card_title_header_link{
     font-size: 16px;
     line-height: 20px;
    }
@@ -1103,7 +1111,7 @@ width: 1px;
     margin-right: 0;
     }
   .news-subject{
-    margin: 10px 0;
+    /*margin: 10px 0;*/
   } 
   .news-heading{
     margin-bottom: 24px;
@@ -1117,7 +1125,7 @@ width: 1px;
       margin-top: 24px;
 
     }
-     .news-content-text p{
+     .news-content-text_article{
       font-size: 14px;
       
     }
